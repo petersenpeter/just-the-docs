@@ -1,26 +1,29 @@
 ---
-layout: default
 title: Callouts
 parent: UI Components
 nav_order: 7
 ---
 
 # Callouts
+{: .d-inline-block }
 
-Markdown does not include support for callouts. However, you can style text as a callout using a Markdown extension supported by kramdown: [*block IALs*](https://kramdown.gettalong.org/quickref.html#block-attributes). 
+New (v0.4.0)
+{: .label .label-green }
+
+Markdown does not include support for callouts. However, you can style text as a callout using a Markdown extension supported by kramdown: [*block IALs*](https://kramdown.gettalong.org/quickref.html#block-attributes).
 
 Common kinds of callouts include `highlight`, `important`, `new`, `note`, and `warning`.
 
 {: .warning }
 These callout names are *not* pre-defined by the theme: you need to define your own names.
 
-When you have [configured]({{ site.baseurl }}{% link docs/configuration.md %}#callouts) the  `color` and (optional) `title` for a callout, you can apply it to a paragraph, or to a block quote with several paragraphs, as illustrated below.[^postfix]
+When you have [configured]({% link docs/configuration.md %}#callouts) the  `color` and (optional) `title` for a callout, you can apply it to a paragraph, or to a block quote with several paragraphs, as illustrated below.[^postfix]
 
 [^postfix]:
     You can put the callout markup either before or after its content.
 
-#### An untitled callout
-{: .no_toc }
+## An untitled callout
+{: .no_toc .text-delta }
 
 ```markdown
 {: .highlight }
@@ -31,8 +34,8 @@ A paragraph
 A paragraph
 
 
-#### A single paragraph callout
-{: .no_toc }
+## A single paragraph callout
+{: .no_toc .text-delta }
 
 ```markdown
 {: .note }
@@ -54,8 +57,8 @@ A paragraph
 >
 > A paragraph with a custom title callout
 
-#### A multi-paragraph callout
-{: .no_toc }
+## A multi-paragraph callout
+{: .no_toc .text-delta }
 
 ```markdown
 {: .important }
@@ -93,8 +96,8 @@ A paragraph
 >
 > The last paragraph
 
-#### An indented callout
-{: .no_toc }
+## An indented callout
+{: .no_toc .text-delta }
 
 ```markdown
 > {: .highlight }
@@ -104,8 +107,8 @@ A paragraph
 > {: .highlight }
   A paragraph
 
-#### Indented multi-paragraph callouts
-{: .no_toc }
+## Indented multi-paragraph callouts
+{: .no_toc .text-delta }
 
 ```markdown
 > {: .new }
@@ -124,8 +127,8 @@ A paragraph
 > > The last paragraph
 
 
-#### Nested callouts
-{: .no_toc }
+## Nested callouts
+{: .no_toc .text-delta }
 
 ```markdown
 {: .important }
@@ -137,8 +140,8 @@ A paragraph
 > {: .warning }
 > A paragraph
 
-#### Opaque background
-{: .no_toc }
+## Opaque background
+{: .no_toc .text-delta }
 
 ```markdown
 {: .important }
